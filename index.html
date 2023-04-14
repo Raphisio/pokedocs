@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/main.css">
+    <title>PokeDocs</title>
+</head>
+<body>
+    <main class="app">
+            <header>
+                <h1><a href="#" class="logo" onclick="initPokemons()">PokeDocs</a></h1>
+                <p class="description">Seach a pokemon by id or name</p>
+                <form action="" class="search-bar">
+                    <input type="text" class="input" id="pokemonName" placeholder="type pikachu for example">
+                    <button type="submit" class="btn btn-search">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.2929 17.7071C16.6834 18.0976 17.3166 18.0976 17.7071 17.7071C18.0976 17.3166 18.0976 16.6834 17.7071 16.2929L16.2929 17.7071ZM14.72 8.36C14.72 11.8725 11.8725 14.72 8.36 14.72V16.72C12.9771 16.72 16.72 12.9771 16.72 8.36H14.72ZM8.36 14.72C4.84747 14.72 2 11.8725 2 8.36H0C0 12.9771 3.7429 16.72 8.36 16.72V14.72ZM2 8.36C2 4.84747 4.84747 2 8.36 2V0C3.7429 0 0 3.7429 0 8.36H2ZM8.36 2C11.8725 2 14.72 4.84747 14.72 8.36H16.72C16.72 3.7429 12.9771 0 8.36 0V2ZM12.4529 13.8671L16.2929 17.7071L17.7071 16.2929L13.8671 12.4529L12.4529 13.8671Z" fill="white"/>
+                        </svg>
+                    </button>
+                </form>
+            </header>
+
+        <div class="pokemons" id="pokemonsContainer">
+        <!-- LOAD OF POKEMONS -->
+        </div>
+        <button id="loadMoreButton" class="btn btn-load-more hidden">Load more</button>
+        <footer>
+            <p>Created by <a href="https://github.com/Raphisio" target="_blank">Julio Alarcon</a> using <a href="https://pokeapi.co/" target="_blank">PokeAPI</a></p>
+        </footer>
+    </main>
+
+    <script src="src/main.js"></script>
+</body>
+</html>
